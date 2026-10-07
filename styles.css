@@ -357,10 +357,6 @@ footer {
   align-items: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-.footer-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 #linkedin-icon {
   height: 25px;
   width: 30px;
@@ -402,6 +398,18 @@ footer {
   padding-bottom: 15px;
   font-size: 25px;
   color: #050517;
+}
+.anchor {
+  color:#3882f6;
+}
+.citations {
+  font-size: 16px;
+  padding-bottom: 30px;
+  scroll-margin-top: 40vh;
+}
+.citation {
+  text-decoration: underline;
+  color:#3882f6;
 }
 /* ==================== */
 
