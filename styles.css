@@ -399,7 +399,7 @@ footer {
 .written-content-subheader {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   font-size: 25px;
   color: #050517;
 }
@@ -410,6 +410,7 @@ footer {
   font-size: 16px;
   padding-bottom: 30px;
   scroll-margin-top: 40vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .citation {
   text-decoration: underline;
