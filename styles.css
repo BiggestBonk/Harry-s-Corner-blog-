@@ -350,23 +350,27 @@ footer {
   color:white;
   background-color: #131331;
   display: flex;
-  height: 50px;
+  flex-wrap: wrap;
+  min-height: 50px;
   width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-#linkedin-icon {
-  height: 25px;
-  width: 30px;
-  margin-left:0px;
+#github-icon {
+  margin-left: 15px;
+  height:30px;
 }
-.footer-image {
-  height: 30px;
-  width: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+#linkedin-icon {
+  margin-left: 15px;
+  height:30px
+}
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
 }
 .legal-notice {
   font-size: 12px;
@@ -492,7 +496,8 @@ footer {
         padding: 20px 16px;
     }
 }
-@media only screen and (max-width: 416px) {
+@media screen and ( max-height:250px),
+       screen and (max-width: 450px) {
   .paragraph {
     margin-left: 10px;
     margin-right: 10px;
@@ -502,6 +507,9 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 20px;
+  }
+  .intro {
+    font-size: 24px;
   }
   .nav-bar {
     flex-direction: column;
@@ -531,16 +539,56 @@ footer {
     padding-bottom:10px
   }
   .recent-item {
+    font-size: 17px;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
   }
   .recent-list {
+    font-size: 12px;
     padding:0;
     text-align: center;
   }
-  .footer {
-    height: fit-content;
+  .box-text {
+    font-size: 14px;
   }
+  .footer {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 12px;
+  }
+  .footer-text {
+    padding-top: 5px;
+    font-size:12px;
+    text-wrap: nowrap;
+    text-align: left;
+  }
+  .legal-notice {
+    padding-top: 5px;
+    text-wrap: nowrap;
+    padding-left:5px;
+    margin-right: 8px;
+  }
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+#github-icon {
+    height: 35px;
+    margin-top: 4px;
+    padding-bottom: 5;
+}
+#linkedin-icon {
+    height: 30px;
+    width: 30px;
+}
   .project-title {
     font-size: 20px;
   }
